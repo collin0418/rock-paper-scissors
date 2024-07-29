@@ -4,38 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="container">
-        <div class="game-board">
-          <!-- Human-Section -->
-          <div class="player-board">
-            <div class="score-counter" id="human-score">Your Score:</div>
-            <!-- Human Board -->
-            <div class="choice-area">
-              <p>Your Play:</p>
-              <div class="choice" id="human-choice-result">1</div>
-            </div>
-          </div>
-
-          <div class="player-board">
-            <div class="score-counter" id="pc-score">Computer Score:</div>
-            <!-- PC Board -->
-            <div class="choice-area">
-              <p>Your Play:</p>
-              <div class="choice" id="pc-choice-result">1</div>
-            </div>
-          </div>
+    <div class="header">
+      <h1>Rock Paper Scissors</h1>
+      <h2>SCORE <u style="color: red">FIVE</u> GAMES TO WIN !</h2>
+    </div>
+    <div class="game-board">
+      <div class="game-info">
+        <div class="score-board">
+          <span>Your Score:</span>
+          <span>Computer Socre:</span>
         </div>
-        <div class="selections">
-          <img src="rock.png" alt="rock" />
-          <img src="paper.png" alt="paper" />
-          <img src="scissors.png" alt="scissors" />
+        <div class="round-info">
+          <p>You win</p>
         </div>
       </div>
+      <div class="game-container">
+        <div class="human-board">
+          <h1>Human</h1>
+          <div class="selection">
+            <div class="choice">
+              <div class="icon-container">
+                <img src="rock.png" alt="rock" />
+              </div>
+              <p>Rock</p>
+            </div>
+            <div class="choice">
+              <div class="icon-container">
+                <img src="paper.png" alt="paper" />
+              </div>
+              <p>Paper</p>
+            </div>
+            <div class="choice">
+              <div class="icon-container">
+                <img src="scissor.png" alt="scissor" />
+              </div>
+              <p>Scissors</p>
+            </div>
+          </div>
+        </div>
+        <div class="pc-board">
+          <h1>Computer</h1>
+          <div class="choice">
+            <div class="pc-icon-container">
+              <img src="scissor.png" alt="scissor" />
+            </div>
+            <p>Scissors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="try-again">
+      <button class="try-again-button">Try Again</button>
     </div>
   </body>
 </html>
