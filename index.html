@@ -14,11 +14,11 @@
     <div class="game-board">
       <div class="game-info">
         <div class="score-board">
-          <span>Your Score:</span>
-          <span>Computer Socre:</span>
+          <p id="human-score">Your Score: 0</p>
+          <span id="computer-score">Computer Socre: 0</span>
         </div>
         <div class="round-info">
-          <p>You win</p>
+          <p id="round-info"></p>
         </div>
       </div>
       <div class="game-container">
@@ -27,19 +27,23 @@
           <div class="selection">
             <div class="choice">
               <div class="icon-container">
-                <img src="rock.png" alt="rock" />
+                <img src="rock.png" alt="rock" onclick="playGame('rock')" />
               </div>
               <p>Rock</p>
             </div>
             <div class="choice">
               <div class="icon-container">
-                <img src="paper.png" alt="paper" />
+                <img src="paper.png" alt="paper" onclick="playGame('paper')" />
               </div>
               <p>Paper</p>
             </div>
             <div class="choice">
               <div class="icon-container">
-                <img src="scissor.png" alt="scissor" />
+                <img
+                  src="scissors.png"
+                  alt="scissors"
+                  onclick="playGame('scissors')"
+                />
               </div>
               <p>Scissors</p>
             </div>
@@ -49,9 +53,9 @@
           <h1>Computer</h1>
           <div class="choice">
             <div class="pc-icon-container">
-              <img src="scissor.png" alt="scissor" />
+              <img src="" id="pc-icon" />
             </div>
-            <p>Scissors</p>
+            <p id="pc-word"></p>
           </div>
         </div>
       </div>
@@ -59,5 +63,10 @@
     <div class="try-again">
       <button class="try-again-button">Try Again</button>
     </div>
+    <div class="popup-window show" id="popup-window">
+      <h2 id="pop-result"></h2>
+      <button onclick="hideMessage()">OK</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
